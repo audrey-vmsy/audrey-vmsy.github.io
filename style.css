@@ -3,12 +3,19 @@
     padding: 0;
     font-family: sans-serif;
 }
-.banner{
-    width: 100%;
-    height: 100vh;
+body{
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(141, 141, 141, 0.75)),url(Palengke-Tips.png);
     background-size: cover;
     background-position: center;
+    min-height: 100%;
+    background-attachment: fixed;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    min-height: 100%;
+    background-attachment: fixed;
+    display: block;
 }
 .navbar{
     width: 85%;
@@ -17,6 +24,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    bottom: 30px;
+    
 }
 .logo{
     width: 120px;
@@ -50,22 +59,30 @@
 /* HOMEPAGE */
 .content{
     width: 100%;
-    position: absolute;
-    top: 40%;
-    transform: translateY(-50%);
+    align-self: top;
     text-align: center;
     color: #fff;
+    overflow-y: auto;
 }
 .content h1{
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 50px;
+    margin-bottom: 20px;
 }
 .content p{
     margin: 20px auto;
     font-weight: 100;
     font-family: Verdana;
-    font-size: 25;
+    font-size: 22;
     line-height: 25px;
+    width: 70%;
+}
+.content img{
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    border-radius: 5%;
+    margin-bottom: 30px;
 }
 button{
     width: 150px;
@@ -112,13 +129,14 @@ th, td {
     border-bottom: 1px solid black;
     color: black;
     padding: 10px;
-    font-size: 20;
+    font-size: large;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: rgba(255, 255, 255, 0.733)
+    background: rgba(255, 255, 255, 0.733);
+    word-wrap: break-word;
+    text-align: center;
 }
 td{
     width: 70%;
-    word-wrap: break-word;
     text-align: left;
 }
 .hypoTable{
@@ -133,19 +151,23 @@ td{
     overflow: hidden;
 }
 
-
+table{
+    margin-bottom: 30px;
+}
 /* Datasets */
 .content a{
     text-decoration: underline;
     color: #fff;
 }
 button{
-    width: 150px;
+    width: 180px;
     padding: 15px 0;
     text-align: center;
     margin: 20px 10px;
     border-radius: 25px;
     font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
     border: 2px solid #009688;
     background: transparent;
     color: #fff;
@@ -169,5 +191,16 @@ button:hover span{
 }
 button:hover{
     border: none;
+}
+.dataTable{
+    table-layout: fixed;
+    width: 70%;
+    padding: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
