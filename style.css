@@ -3,8 +3,13 @@
     padding: 0;
     font-family: sans-serif;
 }
+.specialfont{
+    font-family:monospace;
+    font-style: italic;
+    font-size: xx-large;
+}
 body{
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(141, 141, 141, 0.75)),url(Palengke-Tips.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85),rgba(141, 141, 141, 0.85)),url(Palengke-Tips.png);
     background-size: cover;
     background-position: center;
     min-height: 100%;
