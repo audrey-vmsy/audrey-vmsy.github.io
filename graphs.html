@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Food Prices in the Philippines</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <img src="logo.png" class="logo">
+                    <ul>
+                        <li><a href="index.html">Overview</a></li>
+                        <li><a href="BGinfo.html">Background</a></li>
+                        <li><a href="datasets.html">Data Collection</a></li>
+                        <li><a href="graphs.html">EDA</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="content">
+                    <h1>
+                        Nutshell Plot
+                    </h1>
+
+                    <a>
+                        <img src="nutshell.png" alt="3D graph on the prices of common household food items over the years">
+                    </a>
+                    <p>
+                        In October of 2023, Inquirer published an article titled, Food prices seen to rise until 2024,  detailing an interview with Agricultural economist Geny Lapina on the potential rise in price of food items in 2024. He stated that international conflict, climate change, export restrictions in other countries, and high fuel prices are just some of the many factors contributing to these changes (Corrales, 2023). In the past few years as well, food prices have not always been consistent. This plot illustrates the prices of several food items commonly found in a Filipino household over the years 2020 to 2024, with information sourced from the World Food Programme (WFP) Price Database. This is depicted using a 3D line graph, with each line displaying the trend in price of a specific food item over time. A number are seen to be maintaining a relatively consistent price range (Eggs, Rice, Bananas, Chicken, Fish), while others frequently rise and fall in price (Carrots, Tomatoes, Red Onions).  A few are also seen to be gradually rising in price (Beef, Pork) or gradually lowering in price (Garlic).
+                    </p>
+
+                    <h1>
+                        Graphs for Research Question 1: Which common household food items saw the highest rate of change or variation in prices over the years?
+                    </h1>
+                    <a>
+                        <img src="cereals.png">
+                        <img src="meats.png">
+                        <img src="veggies.png">
+                        <img src="nuts.png">
+                        <img src="misc.png">
+                    </a>
+
+                    <h1>
+                        Graph for Research Question 2: Is the average Filipino household able to afford the increased food prices?
+                    </h1>
+                    <a>
+                        <img src="ave.png" alt="Bar graph on the income and expenditure of a Filipino household in 2021">
+                    </a>
+
+                    <h1>
+                        Hypothesis Testing Results (Augmented Dickey-Fuller Test on Food Prices)
+                    </h1>
+                    <p>
+                        As the data is formatted as a time-series, we chose to analyze it with an Augmented Dickey-Fuller Test for stationarity - this refers to the property of a time series in which it exhibits no trends and has a consistent variance and autocorrelation structure over time. This falls in line with our own objectives and hypothesis in this study: to determine if there are time-related trends in food prices in the Philippines. When the p-value is greater than the specified significance level, we fail to reject the null hypothesis, meaning the time series for a commodity is non-stationary, and has exhibited certain trends.
+                    </p>
+                    <p>
+                        As seen in the table below, a majority of commodities have p-values greater than 0.05, so we can say with 95% confidence that these commodities are non-stationary.
+                    </p>
+                    <h2>
+                        P-values for ADF Tests for each Commodity
+                    </h2>
+                    <a>
+                        <img src="table2.png">
+                    </a>
+                    <p style="text-align: left; font-size: large;"> 
+                        *Similar data for a specific commodity is averaged (e.g., different types of rice, different types of fish, different types of banana, etc.)
+                    </p>
+                    <p style="text-align: left; font-size: large;">
+                        *Commodities highlighted in red have non-stationary time-series.
+                    </p>
+
+                    
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
